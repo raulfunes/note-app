@@ -39,7 +39,7 @@ public class NoteListDTO {
         this.expiration_date = note.getExpiration_date();
         this.state = note.getState().toString();
         this.username = note.getUser().getUsername();
-        this.category = note.getCategory() == null? "Sin categoria" : note.getCategory().getName();
+        this.category = note.getCategory() == null? "No category" : note.getCategory().getName();
         this.category_id = note.getCategory() == null? null : note.getCategory().getId();
     }
 }
